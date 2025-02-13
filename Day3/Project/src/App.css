@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main Section for Articles */
+h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 20px; /* Space between the cards */
+  margin-top: 50px;
+}
+/* Styling for individual article cards */
+.article-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect for article card */
+.article-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Image Styling */
+.article-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Article Title */
+.article-card h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 15px;
+  font-weight: 600;
+}
+
+/* Article Description */
+.article-description {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+/* Article Info Section (Date, Time, Author) */
+.article-info {
+  font-size: 0.75rem;
+  color: #777;
+  margin: 0 15px 20px;
+}
+
+.article-info span {
+  margin-right: 10px;
+}
+
+.article-info .article-date {
+  font-weight: 600;
+}
+
+.article-info .article-read-time,
+.article-info .article-author {
+  font-style: italic;
+}
+
+/* Heart Icon Button Styling */
+.article-card .heart-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f44336; /* Red color for the heart */
+  cursor: pointer;
+  align-self: flex-start;
+  margin: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Heart Icon Hover Effect */
+.article-card .heart-button:hover {
+  color: #ff4081;
+}
