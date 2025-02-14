@@ -17,7 +17,8 @@ h1 {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  grid-template-columns: repeat(3, 1fr); /* 4 columns for desktop */
+  margin-left: 7rem;
   gap: 20px; /* Space between the cards */
   margin-top: 50px;
 }
@@ -43,7 +44,7 @@ h1 {
 /* Article Image Styling */
 .article-image {
   width: 100%;
-  height: 180px;
+  height: 50%;
   object-fit: cover;
 }
 
